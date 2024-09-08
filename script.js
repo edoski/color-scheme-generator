@@ -34,6 +34,12 @@ form.addEventListener('submit', e => {
 				colorDisplay.style.backgroundColor = color;
 				colorHex.textContent = color;
 				
+				// Copy to clipboard when clicking on column
+				column.addEventListener('click', () => {
+					navigator.clipboard.writeText(color);
+					alert(`Copied ${color} to clipboard!`);
+				});
+				
 				column.append(colorDisplay, colorHex);
 				grid.append(column);
 			})

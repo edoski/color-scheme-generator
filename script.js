@@ -30,6 +30,7 @@ form.addEventListener('submit', e => {
 				colorDisplay.classList.add('color-display');
 				colorHex.classList.add('color-hex');
 				
+				// The sauce
 				colorDisplay.style.backgroundColor = color;
 				colorHex.textContent = color;
 				
